@@ -14,7 +14,7 @@ import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: ['/', '/fooftop-official-landing-page'],
     element: <Root />,
     children: [
       {
