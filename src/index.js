@@ -12,10 +12,22 @@ import Index from './routes/index';
 
 import reportWebVitals from './reportWebVitals';
 
+/*const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        path: '/',
+        element: <Index />,
+      },
+    ],
+  },
+]);*/
+
 const router = createBrowserRouter([
   {
     path: '/',
-    basename: '/fooftop-official-landing-page',
     element: <Root />,
     children: [
       {
