@@ -6,6 +6,7 @@ build:
     paths:
       - node_modules/
   script:
+    - node -v
     - yarn
     - yarn build
   artifacts:
