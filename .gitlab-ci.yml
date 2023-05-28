@@ -8,7 +8,7 @@ build:
   script:
     - node -v
     - yarn
-    - yarn build
+    - PUBLIC_URL="https://kr-isamin.git.gold/fooftop-official-landing-page" yarn build
   artifacts:
     paths:
       - build
