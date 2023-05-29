@@ -1,5 +1,6 @@
 #navbar {
   align-items: center;
+  height: 84px;
 
   &::before {
     content: '';
@@ -21,7 +22,7 @@
 
     @media (max-width: 768px) {
       gap: 0;
-      width: 100%;
+      width: 80%;
       justify-content: space-around;
     }
     

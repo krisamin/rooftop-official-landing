@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <div id="navbar">
       <div id="items">
-        <Link id="item">HOME</Link>
-        <Link id="item">ABOUT</Link>
-        <Link id="item">ALBUM</Link>
+        <Link id="item" to="/">HOME</Link>
+        <Link id="item" to="about">ABOUT</Link>
+        <Link id="item" to="album">ALBUM</Link>
       </div>
     </div>
   );

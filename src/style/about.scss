@@ -1,0 +1,59 @@
+#page.about {
+  #logo {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100vw - 48px);
+  }
+
+  #section {
+    overflow: hidden;
+    min-height: 100dvh;
+
+    &.index {
+      min-height: calc(100dvh - 84px);
+    }
+  }
+
+  #character {
+    position: absolute;
+    width: 100dvh;
+    height: 140%;
+    top: 78px; left: 7.5%;
+    background-image: url(../assets/rooftop_ch.png);
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      left: calc(50% + 160px);
+      transform: translateX(-50%);
+      background-position: center bottom;
+    }
+  }
+
+  #text {
+    position: absolute;
+    right: 7.5%; bottom: 50%;
+    transform: translateY(50%);
+
+    gap: 16px;
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      right: 50%;
+      bottom: 5%;
+      transform: translateX(50%);
+    }
+
+    #slogun {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    #description {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

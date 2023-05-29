@@ -9,6 +9,7 @@
   #character {
     position: fixed;
     width: 100%;
+    min-width: 100dvh;
     height: 122%;
     top: 156px; left: 50%;
     transform: translateX(-50%);

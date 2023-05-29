@@ -9,6 +9,7 @@ import './style/style.scss';
 
 import Root from './routes/root';
 import Index from './routes/index';
+import About from './routes/about';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Index />,
+      },
+      {
+        path: '/about',
+        element: <About />,
       },
     ],
   },
