@@ -11,7 +11,7 @@
     width: 100%;
     min-width: 100dvh;
     height: 122%;
-    top: 156px; left: 50%;
+    top: 156px; left: calc(50% + 6px);
     transform: translateX(-50%);
     background-image: url(../assets/rooftop_ch.png);
     background-size: contain;

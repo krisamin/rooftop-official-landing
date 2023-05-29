@@ -13,6 +13,12 @@
     &.index {
       min-height: calc(100dvh - 84px);
     }
+
+    &.content {
+      gap: 110px;
+      padding: 75px 0;
+      min-height: calc(100dvh - 150px);
+    }
   }
 
   #character {
@@ -54,6 +60,50 @@
     #description {
       font-size: 16px;
       font-weight: 400;
+    }
+  }
+
+  #group {
+    padding: 0 74px;
+
+    &.artists {
+      gap: 48px;
+
+      #list {
+        flex-direction: row;
+        gap: 70px;
+        flex-wrap: wrap;
+  
+        #artist {
+          gap: 22px;
+  
+          #profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #242424;
+          }
+  
+          #name {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    &.contact {
+      gap: 16px;
+
+      #list {
+        flex-direction: row;
+        gap: 24px;
+      }
+    }
+
+    #title {
+      font-size: 20px;
+      font-weight: 600;
     }
   }
 }
