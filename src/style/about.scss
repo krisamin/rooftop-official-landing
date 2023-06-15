@@ -12,6 +12,11 @@
 
     &.index {
       min-height: calc(100dvh - 84px);
+
+      #toplogo {
+        margin-top: 20px;
+        align-self: center;
+      }
     }
 
     &.content {

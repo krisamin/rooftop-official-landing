@@ -10,6 +10,7 @@ import './style/style.scss';
 import Root from './routes/root';
 import Index from './routes/index';
 import About from './routes/about';
+import Album from './routes/album';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
+      {
+        path: '/album',
+        element: <Album />,
+      }
     ],
   },
 ]);

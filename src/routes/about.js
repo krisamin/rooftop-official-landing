@@ -4,6 +4,7 @@ import "../style/about.scss";
 
 import { ReactComponent as Discord } from "../assets/icons/discord.svg";
 import { ReactComponent as Mail } from "../assets/icons/mail.svg";
+import { ReactComponent as TopLogo } from "../assets/icons/toplogo.svg";
 
 import artists from "../data/artists.json";
 
@@ -11,6 +12,7 @@ const About = () => {
   return (
     <div id="page" className="about">
       <div id="section" className="index">
+        <TopLogo id="toplogo" />
         <div id="character" />
         <div id="text">
           <p id="slogun">“MAKE MUSIC. LIVE IN MUSIC.”</p>
