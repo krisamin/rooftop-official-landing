@@ -5,6 +5,8 @@ import "../style/about.scss";
 import { ReactComponent as Discord } from "../assets/icons/discord.svg";
 import { ReactComponent as Mail } from "../assets/icons/mail.svg";
 
+import artists from "../data/artists.json";
+
 const About = () => {
   return (
     <div id="page" className="about">
@@ -19,20 +21,23 @@ const About = () => {
         <div id="group" className="artists">
           <p id="title">Main Artists</p>
           <div id="list">
-            {[1, 2, 3].map((item, index) => (
+            {Object.keys(artists).map((item, index) => (
+              <a href={artists[item].link} rel="noreferrer" target="_blank">
                 <div id="artist" key={index}>
-                  <div id="profile" />
-                  <div id="name">KiRist</div>
+                  <div id="profile" style={
+                    { backgroundImage: `url(/images/profiles/${artists[item].profile})` }
+                  } />
+                  <div id="name">{item}</div>
                 </div>
-              )
-            )}
+              </a>
+            ))}
           </div>
         </div>
         <div id="group" className="contact">
           <p id="title">Contact</p>
           <div id="list">
-            <a href="/" target="_blank"><Discord /></a>
-            <a href="/" target="_blank"><Mail /></a>
+            <a href="https://isamin.kr" rel="noreferrer" target="_blank"><Discord /></a>
+            <a href="https://isamin.kr" rel="noreferrer" target="_blank"><Mail /></a>
           </div>
         </div>
       </div>
