@@ -1,9 +1,17 @@
 image: node:18.16.0
 
-build:
-  stage: build
+default:
   tags:
     - power
+
+stages:
+  - build
+  - test
+  - deploy
+
+
+build-job:
+  stage: build
   cache:
     paths:
       - node_modules/
@@ -15,7 +23,7 @@ build:
     paths:
       - build
 
-test:
+test-job:
   stage: test
   cache:
     paths:
