@@ -2,6 +2,8 @@ image: node:18.16.0
 
 build:
   stage: build
+  tags:
+    - power
   cache:
     paths:
       - node_modules/
