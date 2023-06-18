@@ -32,10 +32,10 @@ test-job:
   script:
     - yarn test
 
-pages:
+pages-job:
   stage: deploy
   dependencies: 
-    - build
+    - build-job
   script:
     - rm -rf public
     - cp build/index.html build/404.html
